@@ -1,0 +1,310 @@
+/* MENU ICON PADRÃO */
+.menu-icon i {
+    display: none;
+}
+
+/* NAVBAR MOBILE PADRÃO */
+.navbar-mobile {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.83);
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#maincar-mobile-img {
+    display: none;
+}
+
+#arrows {
+    display: none;
+}
+
+#arrows-offers {
+    display: none;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 400px) {
+
+
+body {
+    overflow-x: hidden;
+}
+
+/* Esconde navbar normal */
+.navbar {
+    display: none;
+}
+
+/* Ajusta logo */
+.logo img {
+    margin-right: 10rem;
+}
+
+/* Mostra o ícone do menu */
+.menu-icon i {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: white; /* ícone branco */
+    font-size: 25px;
+    z-index: 1000;
+}
+
+/* Navbar ativa (desliza para dentro) */
+.navbar-mobile.active {
+    transform: translateX(0);
+}
+
+/* Links mobile */
+.navbar-mobile .navlinks-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5rem;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    gap: 1.5rem;
+}
+
+.navbar-mobile .navlinks-mobile a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Botões mobile */
+.nav-btns-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-btns-mobile a {
+    background-color: blue;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#maincar-img{
+    display: none;
+}
+
+#maincar-mobile-img {
+    display: block;
+}
+
+.hero h1 {
+    transform: translateX(-560px);
+    font-size: 50px;
+    width: 250px;
+}
+
+.hero p {
+    transform: translateX(-535px);
+    font-size: 15px;
+    width: 600px;
+}
+
+.cars h1 {
+    font-size: 30px;
+    margin-top: rem;
+}
+
+#arrows {
+    display: block;
+    display: flex;
+    width: 100px;
+}
+
+#arrows i {
+    color: black;
+    font-size: 15px;
+    margin: 0rem 0rem 0rem 7rem;
+}
+
+.launch-containers {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 400px;
+}
+
+.launch-car-container-cy,
+.launch-car-container-s,
+.launch-car-container-y,
+.launch-car-container-x {
+    width: 440px;
+    background-size: contain;
+    margin: 0rem 0rem 0rem 1.5rem;
+}
+
+.launch-car-container-cy h1,
+.launch-car-container-s h1,
+.launch-car-container-x h1,
+.launch-car-container-y h1{
+    color: rgb(255, 255, 255);
+    transform: translateY(20px);
+    font-size: 20px;
+}
+
+.launch-car-container-x {
+    margin-right: 1.7rem;
+}
+
+.car-details {
+    transform: translateY(-5px);
+    display: none;
+
+}
+
+.car-details p {
+    font-size: 15px;
+    display: none;
+} 
+
+#car-details-btn {
+    background-color: blue;
+    transform: translateY(0px);
+    margin-top: 19rem;
+    width: 150px;
+    font-size: 15px;
+    margin-left: 20rem;
+} 
+
+.offers {
+    transform: translateY(-270px);
+}
+
+#span {
+    font-size: 35px;
+    width: 470px;
+    color: rgb(0, 0, 0);
+}
+
+#arrows-offers {
+    display: block;
+    display: flex;
+    width: 100px;
+    margin-bottom: 5rem;
+}
+
+#arrows-offers i {
+    color: black;
+    font-size: 15px;
+    margin: 0rem 0rem 0rem 7rem;
+}
+
+
+.carrosel-offers {
+    padding: 0;
+}
+
+.container-offers {
+    width: 400px;
+    margin: 8rem 0rem 18rem 3rem;
+}
+
+.aboutus {
+    transform: translateY(-272px);
+}
+
+#span1 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.aboutus-container {
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    padding-bottom: 10rem;
+    height: 1000px;
+}
+
+#elon {
+    padding: 0;
+    transform: translateY(-50px);
+}
+
+#elon h1 {
+    font-size: 13.5px;
+    margin-right: 5rem;
+    transform: translateX(-80px);
+}
+
+#elon h3 {
+    font-size: 15px;
+    margin-right: 5rem;
+    transform: translateX(-80px);
+}
+
+#saibamais{
+    transform: translateY(60px);
+    font-size: 17px;
+    width: 430px;
+    padding: 5px;
+    margin-left: 1rem;
+    height: 500px;
+}
+
+.contacts {
+    transform: translateY(-300px);
+}
+
+.form-contact {
+    width: 400px;
+}
+
+#span3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+}
+
+#footer-left {
+    transform: translateX(30px);
+}
+
+#footer-right {
+    margin-bottom: 5rem;
+}
+
+#footer-right h2 {
+    font-size: 15px;
+    width: 450px;
+}
+
+}

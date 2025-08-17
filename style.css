@@ -1,0 +1,742 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&family=Krona+One&family=M+PLUS+Rounded+1c&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.7rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: 0.8s;
+}
+
+body.scrolled .header {
+    background-color: rgba(0, 0, 0, 0.733);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.logo img {
+    filter: brightness(0) invert(1);
+    transition: 0.8s;
+}
+
+body.scrolled .logo img {
+    filter: brightness(0) invert(1);
+}
+
+body.scrolled .navbar .navlinks a {
+    color: white;
+}
+
+body.scrolled .navbar .nav-btns a {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar .navlinks {
+    display: inline-flex;
+    margin: 0 0 0 50px;
+    margin-right: 250px;
+}
+
+.navbar .navlinks a {
+    margin-left: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.navlinks a.active,
+.nav-btns a.active {
+    border-bottom: 2px solid white; /* ou qualquer cor que preferir */
+    padding-bottom: 2px;
+}
+
+
+.navbar .navlinks a:hover {
+    color: blue;
+    background-color: rgba(211, 211, 211, 0.547);
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.nav-btns a {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    color: white;
+    padding: 3px;
+    width: 90px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav-btns a:nth-child(2) {
+    background-color: blue;
+    color: white;
+}
+
+body.scrolled .navbar a {
+    color: black;
+}
+
+body.scrolled .nav-btns a:nth-child(2) {
+    color: white;
+}
+
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+.hero img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -999;
+}
+
+.hero h1 {
+    position: absolute;
+    margin: 8rem 0 0 42rem;
+    font-size: 50px;
+    color: rgb(0, 8, 255);
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px,
+                 rgba(13, 0, 0, 0.3) 0px 30px 60px -30px;
+    letter-spacing: 5px;
+}
+
+.hero p {
+    position: absolute;
+    margin: 13rem 0 0 38.5rem;
+    color: black;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+@keyframes changeImg {
+
+    0% {opacity: 0;  transform: translateX(80px);}
+    5% {opacity: 1; transform: translateX(0);}
+    25% {opacity: .8; transform: translateX(0);}
+    30% {opacity: 0; transform: translateX(-200px);}
+    70% {opacity: 0; transform: translateX(-100px);}
+    100% {opacity: 0; transform: translateX(-200px);}
+}
+
+.buttons {
+    position: absolute;
+    margin: 39rem 0 0 30rem;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    padding: 0.4rem;
+    width: 200px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.buttons button:first-child {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.buttons button:first-child:hover {
+    background-color: rgb(2, 2, 183);
+}
+
+.buttons button:nth-child(2) {
+    background-color: white;
+    color: black;
+}
+
+.buttons button:nth-child(2):hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.car-description {
+    position: absolute;
+    margin: 28rem 0 0 62rem;
+    width: 400px;
+    height: 200px;
+    padding: 1rem;
+    border-radius: 50px 50px 50px 0;
+    background-color: rgba(0,0,0,0.364);
+    display: none;
+    transition: 2s ease-in-out;
+}
+
+.car-description h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.car-description p {
+    text-align: center;
+    color: white;
+}
+
+.car-description #p1 { margin: 20px 0 20px 90px; }
+.car-description #p2 { margin: 60px 0 20px 110px; }
+.car-description #p3 { margin: 100px 0 20px 120px; }
+
+/* ===== CARS / SWIPER ===== */
+.cars {
+    background-color: #fff;
+    margin-top: 2rem;
+    height: 600px;
+}
+
+.cars h1 {
+    text-transform: uppercase;
+    margin: 80px 0 5px 0;
+    padding: 2.5rem;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+
+.launch-containers {
+    height: 90vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    scroll-behavior: smooth;
+    padding: 3rem;
+}
+
+.launch-containers::-webkit-scrollbar {
+    height: 3px;
+}
+
+.launch-containers::-webkit-scrollbar-thumb {
+    background: #1215d1;
+    border-radius: 5px;
+}
+
+.launch-car-container-cy,
+.launch-car-container-y,
+.launch-car-container-s,
+.launch-car-container-x {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 500px;
+    width: 1200px; /* tamanho consistente */
+    background-repeat: no-repeat;
+    background-size: cover;       /* tamanho inicial */
+    background-position: center;
+    flex: 0 0 auto;
+    border-radius: 15px 0px 15px 0px;
+    transition: background-size 1s ease; /* transição suave definida aqui */
+}
+
+
+.launch-car-container-cy {
+    background-image: url(imgs/launch-teslas/cybertruck.avif);
+}
+
+.launch-car-container-y {
+    background-image: url(imgs/launch-teslas/Model-Y-2-Hero-Desktop.avif);
+}
+
+.launch-car-container-s {
+    background-image: url(imgs/launch-teslas/Homepage-Card-Model-S-Desktop-US.avif);
+}
+
+.launch-car-container-x {
+    background-image: url(imgs/launch-teslas/modelx.avif);
+}
+
+.launch-car-container-cy h1,
+.launch-car-container-y h1,
+.launch-car-container-s h1,
+.launch-car-container-x h1 {
+    color: white;
+    transform: translateY(-80px);
+    width: 100px;
+    font-family: "Krona One", sans-serif;
+}
+
+.car-details {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    color: white;
+    opacity: 0;
+    transition: 1.5s;
+    transform: translateY(-110px);
+}
+
+#car-details-span {
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    transform: translateY(-170px);
+}
+
+#car-details-btn {
+    color: white;
+    margin-top: 5rem;
+    background-color: blue;
+    padding: 3px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    transition: 1.2s;
+    font-family: "Montserrat", sans-serif;
+}
+
+.launch-car:hover .car-details {
+    display: flex;
+    opacity: 1;
+    transition: 1.2s;
+}
+
+.launch-car:hover #car-details-btn {
+    display: block;
+    transform: translateX(10px);
+    opacity: 1;
+    transition: 1.2s;
+}
+
+
+
+
+/* ===== OFFERS ===== */
+.offers {
+    margin-top: 25rem;
+    margin-bottom: 0;
+}
+
+#span {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 5rem;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.carrosel-offers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: scroll;
+    background-color: #1A1A1A;
+}
+
+.carrosel-offers::-webkit-scrollbar {
+    display: none;
+}
+
+.container-offers {
+    border-radius: 12px 6px 12px 6px;
+    border: 1px inset rgba(0,0,0,0.266);
+    width: 400px;
+    height: 460px;
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    margin: 8rem 6rem 14rem 6rem;
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+#container-offers-logo {
+    width: 120px;
+    margin: 10px auto 0 auto;
+}
+
+.container-offers img {
+    width: 390px;
+}
+
+.container-offers h4 {
+    margin-left: 20px;
+    margin-bottom: 1.5px;
+}
+
+.container-offers h5, .container-offers h6{
+    margin-left: 20px;
+    margin-bottom: 1.5px;
+    transition: 1s;
+    transform: translateX(140px);
+}
+
+
+
+.container-offers h4 {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin-bottom: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-weight: 200;
+
+}
+
+.container-offers h5 { font-size: 19px; }
+.container-offers h6 {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.577);
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* ===== COLORS ===== */
+.colors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    width: 115px;
+    transform: translateX(140px);
+    transition: 1s;
+}
+
+
+#shop-btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    margin: 40px auto 0px;
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+#shop-btn:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+
+
+/* Cada cor mantém o mesmo background gradient */
+#color1, #color2, #color3, #color4, #color5, #color6, #color7, #color8, #color9, #color10, #color11, #color12 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Gradientes específicos por ID */
+#color1 { background: linear-gradient(to bottom, #E3E2E7, #7C7878, #B8B3B3);}
+#color2 { background: linear-gradient(to bottom, #002D7D, #0341AB, #1B60D5);}
+#color3 { background: linear-gradient(to bottom, #242329, #514F5D, #89869B);}
+#color4 { background: linear-gradient(to bottom, #AA0E1E, #BD1C2C, #DB7F88);}
+#color5 { background: linear-gradient(to bottom, #99C0E4, #76A9D9, #519ADD);}
+#color6 { background: linear-gradient(to bottom, #FFFFFF, #D3CFCF, #B3AFaf);}
+#color7 { background: linear-gradient(to bottom, #000000, #363434, #3B3A3A);}
+#color8 { background: linear-gradient(to bottom, #242329, #514F5D, #89869B);}
+#color9 { background: linear-gradient(to bottom, #FFFFFF, #D3CFCF, #B3AFAF);}
+#color10 { background: linear-gradient(to bottom, #242329, #514F5D, #89869B);}
+#color11 { background: linear-gradient(to bottom, #AA0E1E, #BD1C2C, #DB7F88);}
+#color12 { background: linear-gradient(to bottom, #E3E2E7, #7C7878, #B8B3B3);}
+
+/* ===== SOBRE NÓS ===== */
+#span1 {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-bottom: 6rem;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.aboutus-container { 
+    height: 102vh; 
+    width: 100%; 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(imgs/tesla-img-aboutus.jpg); 
+    background-position: right right; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; padding: 1rem; 
+    display: flex; 
+    justify-content: space-between; }
+
+
+#elon {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0 0 5rem;
+}
+
+#elon h1 {
+    color: white;
+    font-family: "Krona One", sans-serif;
+    font-size: 37px;
+}
+
+#elon h1::after {
+    content: '  ━━━◇';
+    color: rgb(64, 0, 255);
+}
+
+#elon h3 {
+    color: whitesmoke;
+    font-weight: 200;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#saibamais {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    padding: 2rem;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 2.2;
+    text-align: justify;
+    color: white;
+    margin-top: 3rem;
+}
+
+#saibamais a {
+    width: 400px;
+    text-align: center;
+    color: white;
+    border: 1px inset blue;
+    border-radius: 3px;
+    margin: 3rem auto;
+    transition: 0.5s;
+    font-family: "Inter", sans-serif;
+}
+
+#saibamais a:hover {
+    background-color: rgba(0, 0, 255, 0.236);
+    border: 1px inset transparent;
+}
+
+/* ===== CONTATO ===== */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+    margin-top: 4rem;
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logotipo-da-tesla {
+    width: 400px;
+    margin-bottom: 2rem;
+}
+
+.img-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    gap: 15px;
+}
+
+.img-contact i {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.img-contact i:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.form-contact {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    border-radius: 7px;
+    height: 530px;
+}
+
+.form-contact h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-contact input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #04124446;
+    border-radius: 5px;
+}
+
+.form-contact input:hover {
+    border-color: #3D6AE1;
+    box-shadow: 2px 2px 10px #3D6AE1;
+}
+
+#mensagem {
+    transition: .5s;
+    padding-bottom: 8rem;
+}
+
+
+#btn-contact {
+    margin: 1rem auto;
+    padding: 0.7rem;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 9px;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    letter-spacing: 2px;
+}
+
+#btn-contact a {
+    color: black;
+    position: relative;
+    z-index: 2;
+}
+
+#btn-contact:hover a {
+    color: white;
+    transition: 0.5s;
+    
+}
+
+#btn-contact::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0000FF;
+    transition: 0.5s;
+}
+
+#btn-contact:hover::after {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: black;
+    height: 70vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer img {
+    width: 270px;
+    margin: 1rem;
+}
+
+#footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#footer-left p {
+    color: white;
+    margin: 0 auto;
+}
+
+#footer-right {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 7rem 1rem 0rem 1rem;
+}
+
+
+#footer-right  a i {
+    font-size: 30px;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+#footer-right:nth-child(1) {
+    margin-left: 5rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin: 0 auto;
+}
+

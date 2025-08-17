@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ccs/cybertruck.css">
+    <title>Cybertruck | Tesla</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="cybertruck-img">
+            <img id="cybertruck" src="details/cybertruck-details/cybertruck-main.jpeg" alt="">
+            <img id="cybertruck-wheel-img1" src="details/cybertruck-details/wheel1.jpeg" alt="" style="display: none;">
+            <img id="cybertruck-wheel-img2" src="details/cybertruck-details/wheel2.jpeg" alt="" style="display: none;">
+            <img id="innerimg-cy1" src="details/cybertruck-details/innerimg1.png" alt="" style="display: none;">
+            <img id="innerimg-cy2" src="details/cybertruck-details/innerimg2.png" alt="" style="display: none;">
+        </div>
+
+        <div class="cybertruck-details">
+
+            <div class="cybertruck-details-nav">
+                <img src="imgs/tesla-logo.png" alt="">
+                <a href="index.html">Inicio</a>
+            </div>
+
+            <h2>CYBERTRUCK</h2>
+
+            <div class="car-details">
+                <span id="details">
+                    <p>410 mi</p>
+                    <p>Range (EPA est.)</p>
+                </span>
+                <span id="details">
+                    <p>130 mph</p>
+                    <p>Top Speed</p>
+                </span>
+                <span id="details">
+                    <p>4.1sec</p>
+                    <p>0-60 mph</p>
+                </span>
+            </div>
+
+            <div class="wheels">
+
+                <h3>Escolha a roda</h3>
+
+                <div>
+                    <p id="info-wheels"></p>
+
+                    <div class="wheels-imgs">
+                        <img id="wheel1" src="details/cybertruck-details/CoreWheel1.avif" alt="">
+                        <img id="wheel2" src="details/cybertruck-details/CyberWheel2.avif" alt="">
+                    </div>
+                </div>
+
+                <div class="inner-design">
+                    <h3>COR DO DESIGN INTERIOR</h3>
+
+                    <div class="inner-color">
+                        <span id="color-inner1"></span>
+                        <span id="color-inner2"></span>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <h1>Informações de valores</h1>
+
+                    <h4>$ 79,880</h4>
+                    <h5 id="wheels-selected"></h5>
+                    <h5 id="inner-selected"></h5>
+
+                    <h5 id="value" style="display: none;"></h5>
+
+                    <button id="payment">Finalizar pagamento</button>
+                </div>
+
+            </div>    
+
+        </div>
+
+    </div>
+
+    <script src="scripts/cybertruck.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS do Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="ccs/mobile.css">
+
+    <title>Tesla | MFT</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="home">
+    <div class="logo">
+        <img src="imgs/tesla-logo.png" alt="Logo da Tesla">
+    </div>
+
+    <!-- Botão hamburguer -->
+    <div class="menu-icon" id="menu-icon">
+    <i class="fa-solid fa-bars"></i>
+    </div>
+
+
+    <nav class="navbar" id="navbar">
+        <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#cars">Carros</a></li>
+            <li><a href="#offers">Ofertas</a></li>
+            <li><a href="#aboutus">Sobre nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+
+        <div class="nav-btns">
+            <a href="#">Cadastre-se</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <nav class="navbar-mobile" id="navbar-mobile">
+        <ul class="navlinks-mobile">
+            <li><a href="#">Home</a></li>
+            <li><a href="#cars">Carros</a></li>
+            <li><a href="#offers">Ofertas</a></li>
+            <li><a href="#aboutus">Sobre nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+
+        <div class="nav-btns-mobile">
+            <a href="#">Cadastre-se</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+</header>
+
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>MODEL 3</h1>
+        <p>Conheça Nosso mais novo modelo</p>
+
+        <img id="maincar-img" src="imgs/Homepage-Promo-Model-3-Desktop-US-July.avif" alt="Tesla Model 3S">
+        <img id="maincar-mobile-img" src="imgs/Homepage-Promo-Model-3-Mobile-US-Julyteste.avif" alt="">
+
+        
+
+        <div class="car-description">
+            <h3 id="h3">Details Tesla Model 3</h3>
+            <p id="p1">363mi Range (EPA est.)</p>
+            <p id="p2">125mph Top Speed</p>
+            <p id="p3">4.9sec 0-60 mph</p>
+        </div>
+    </div>
+
+    <!-- SEÇÃO DE CARROS -->
+    <section class="cars">
+        <h1>Últimos lançamentos</h1>
+
+        <span id="arrows">
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+        </span>
+
+        <div class="launch-containers" id="cars">
+
+            <!-- CYBERTRUCK -->
+            <div class="launch-car-container-cy launch-car">
+                <h1>CYBERTRUCK</h1>
+                <div class="car-details" id="car-details">
+                    <span id="details">
+                        <p>325 mi</p>
+                        <p>Range (EPA est.)</p>
+                    </span>
+                    <span id="details">
+                        <p>11,000 ibs</p>
+                        <p>Towing capacity</p>
+                    </span>
+                    <span id="details">
+                        <p>4.1sec</p>
+                        <p>0-60 mph</p>
+                    </span>
+                </div>
+                <span id="car-details-span">
+                    <a id="car-details-btn" href="cybertruck.html">MAIS DETALHES</a>
+                </span>
+            </div>
+
+            <!-- MODEL Y -->
+            <div class="launch-car-container-y launch-car">
+                <h1>MODEL Y</h1>
+                <div class="car-details" id="car-details">
+                    <span id="details">
+                        <p>357 mi</p>
+                        <p>Range (EPA est.)</p>
+                    </span>
+                    <span id="details">
+                        <p>125 mph</p>
+                        <p>Top Speed</p>
+                    </span>
+                    <span id="details">
+                        <p>5.4sec</p>
+                        <p>0-60 mph</p>
+                    </span>
+                </div>
+                <span id="car-details-span">
+                    <a id="car-details-btn" href="modelY.html">MAIS DETALHES</a>
+                </span>
+            </div>
+
+            <!-- MODEL S -->
+            <div class="launch-car-container-s launch-car">
+                <h1>MODEL S</h1>
+                <div class="car-details" id="car-details">
+                    <span id="details">
+                        <p>410 mi</p>
+                        <p>Range (EPA est.)</p>
+                    </span>
+                    <span id="details">
+                        <p>130 mph</p>
+                        <p>Top Speed</p>
+                    </span>
+                    <span id="details">
+                        <p>3.1sec</p>
+                        <p>0-60 mph</p>
+                    </span>
+                </div>
+                <span id="car-details-span">
+                    <a id="car-details-btn" href="models.html">MAIS DETALHES</a>
+                </span>
+            </div>
+
+            <!-- MODEL X -->
+            <div class="launch-car-container-x launch-car">
+                <h1>MODEL X</h1>
+                <div class="car-details" id="car-details">
+                    <span id="details">
+                        <p>352 mi</p>
+                        <p>Range (EPA est.)</p>
+                    </span>
+                    <span id="details">
+                        <p>149 mph</p>
+                        <p>Top Speed</p>
+                    </span>
+                    <span id="details">
+                        <p>3.8sec</p>
+                        <p>0-60 mph</p>
+                    </span>
+                </div>
+                <span id="car-details-span">
+                    <a id="car-details-btn" href="modelx.html">MAIS DETALHES</a>
+                </span>
+            </div>
+
+        </div>
+
+        <span id="offers"></span>
+    </section>
+
+    <!-- SEÇÃO DE OFERTAS -->
+    <section class="offers">
+        <span id="span-offer">
+            <h1 id="span">Confira nossas ofertas</h1>
+        </span>
+
+        <span id="arrows-offers">
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+        </span>
+
+        
+
+        <div class="carrosel-offers">
+
+            <!-- TESLA MODEL Y -->
+            <div class="container-offers">
+                <img id="container-offers-logo" src="imgs/tesla-logo.png" alt="">
+                <img id="modely-silver" src="teslas-images/teslay/teslay-color-silver.jpeg" alt="Oferta Tesla Model Y">
+                <img id="modely-blue" src="teslas-images/teslay/teslay-color-blue.jpeg" alt="Oferta Tesla Model Y" style="display: none;">
+                <img id="modely-grey" src="teslas-images/teslay/teslay-color-grey.jpeg" alt="Oferta Tesla Model Y" style="display: none;">
+                <img id="modely-silver-hover" src="teslas-images/teslay/teslay-color-silver-hover.jpeg" alt="" style="display: none;">
+                <img id="modely-blue-hover" src="teslas-images/teslay/teslay-color-blue-hover.jpeg" alt="" style="display: none;">
+                <img id="modely-grey-hover" src="teslas-images/teslay/teslay-color-grey-hover.jpeg" alt="" style="display: none;">
+                <h4>Tesla Model Y</h4>
+                <h5>$ 37,490</h5>
+                <h6>$ 48,510</h6>
+                <div class="colors">
+                    <div id="color1"></div>
+                    <div id="color2"></div>
+                    <div id="color3"></div>
+                </div>
+
+                <a href="modelY.html" id="shop-btn">Comprar <i class="fa-solid fa-cart-shopping"></i></a>
+
+            </div>
+
+            <!-- TESLA MODEL S -->
+            <div class="container-offers">
+                <img id="container-offers-logo" src="imgs/tesla-logo.png" alt="">
+                <img id="models-red" src="teslas-images/teslas/teslas-color-red.jpeg" alt="Oferta Tesla Model S">
+                <img id="models-mblue" src="teslas-images/teslas/teslas-color-mblue.jpeg" alt="Oferta Tesla Model S" style="display: none;">
+                <img id="models-white" src="teslas-images/teslas/teslas-color-white.jpeg" alt="Oferta Tesla Model S" style="display: none;">
+                <img id="models-red-hover" src="teslas-images/teslas/tesla-color-red-hover.jpeg" alt="" style="display: none;">
+                <img id="models-mblue-hover" src="teslas-images/teslas/tesla-color-mblue-hover.jpeg" alt="" style="display: none;">
+                <img id="models-white-hover" src="teslas-images/teslas/tesla-color-white-hover.jpeg" alt="" style="display: none;">
+                <h4>Tesla Model S</h4>
+                <h5>$ 79,990</h5>
+                <h6>$ 89,510</h6>
+                <div class="colors">
+                    <div id="color4"></div>
+                    <div id="color5"></div>
+                    <div id="color6"></div>
+                </div>
+
+                <a href="models.html" id="shop-btn">Comprar <i class="fa-solid fa-cart-shopping"></i></a>
+
+            </div>
+
+            <!-- TESLA MODEL 3 -->
+            <div class="container-offers">
+                <img id="container-offers-logo" src="imgs/tesla-logo.png" alt="">
+                <img id="model3-black" src="teslas-images/tesla3/tesla3-color-black.jpeg" alt="Oferta Tesla Model 3">
+                <img id="model3-grey" src="teslas-images/tesla3/tesla3-color-grey.jpeg" alt="Oferta Tesla Model 3" style="display: none;">
+                <img id="model3-white" src="teslas-images/tesla3/tesla3-color-white.jpeg" alt="Oferta Tesla Model 3" style="display: none;">
+                <img id="model3-black-hover" src="teslas-images/tesla3/tesla3-color-black-hover.jpeg" alt="" style="display: none;">
+                <img id="model3-grey-hover" src="teslas-images/tesla3/tesla3-color-grey-hover.jpeg" alt="" style="display: none;">
+                <img id="model3-white-hover" src="teslas-images/tesla3/tesla3-color-white-hover.jpeg" alt="" style="display: none;">
+                <h4>Tesla Model 3</h4>
+                <h5>$ 47,990</h5>
+                <h6>$ 55,510</h6>
+               
+                <div class="colors">
+                    <div id="color7"></div>
+                    <div id="color8"></div>
+                    <div id="color9"></div>
+                </div>
+
+                <a href="model3.html" id="shop-btn">Comprar <i class="fa-solid fa-cart-shopping"></i></a>
+
+            </div>
+
+            <!-- TESLA MODEL X -->
+            <div class="container-offers">
+                <img id="container-offers-logo" src="imgs/tesla-logo.png" alt="">
+                <img id="modelx-black" src="teslas-images/teslax/teslax-color-black.jpeg" alt="Oferta Tesla Model X">
+                <img id="modelx-red" src="teslas-images/teslax/teslax-color-red.jpeg" alt="Oferta Tesla Model X" style="display: none;">
+                <img id="modelx-silver" src="teslas-images/teslax/teslax-color-silver.jpeg" alt="Oferta Tesla Model X" style="display: none;">
+                <h4>Tesla Model X</h4>
+                <h5>$ 89,990</h5>
+                <h6>$ 99,510</h6>
+                <div class="colors">
+                    <div id="color10"></div>
+                    <div id="color11"></div>
+                    <div id="color12"></div>
+                </div>
+
+                <a href="modelx.html" id="shop-btn">Comprar <i class="fa-solid fa-cart-shopping"></i></a>
+
+            </div>
+
+        </div>
+
+        <span ></span>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section class="aboutus">
+        <span>
+            <h1 id="span1">SOBRE NÓS</h1>
+        </span>
+
+        <div class="aboutus-container" id="aboutus">
+            <div id="elon">
+                <h1>ELON MUSK</h1>
+                <h3>CEO - TESLA</h3>
+            </div>
+
+            <div id="saibamais">
+                <p>
+                    A Tesla, fundada em 2003 e liderada por Elon Musk, é uma empresa pioneira em veículos elétricos e soluções de energia sustentável. Sob a visão de Musk, a empresa se destacou pela inovação tecnológica, combinando desempenho, design moderno e eficiência ambiental em modelos como Model S, Model 3, Model X e Model Y. Além de carros, a Tesla investe em painéis solares e baterias, promovendo um futuro mais limpo e sustentável, seguindo a missão de Musk de acelerar a transição do mundo para a energia renovável.
+                </p>
+                <a href="https://pt.wikipedia.org/wiki/Tesla,_Inc." target="_blank">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contacts" id="contact">
+        <span id="span-offer">
+            <h1 id="span3">ENTRE EM CONTATO</h1>
+        </span>
+
+        <div class="form-contact">
+            <input type="name" name="name" id="nome" placeholder="Seu nome*">
+            <input type="email" name="email" id="email" placeholder="Seu email*">
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem aqui*">
+
+            <button id="btn-contact"><a href="#">Enviar</a></button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-left">
+            <img src="imgs/tesla-logo-footer.png" alt="">
+            <p>Tesla - All the rights reserved <i class="fa-solid fa-copyright"></i></p>
+        </div>
+
+        <div id="footer-right">
+            <h2>PROJETO DESENVOLVIDO POR MATHEUS TOFFANO</h2>
+            <span class="icons">
+                <a href="https://github.com/matheustoffano" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/matheustoffanoo/?igsh=bGk4a3Fkb2IzNm5k#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/matheus-fernandes-toffano-0774a8203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100016886770337" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </span>
+        </div>
+    </footer>
+
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

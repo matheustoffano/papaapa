@@ -1,0 +1,278 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&family=Krona+One&family=M+PLUS+Rounded+1c&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C0B0C;
+    overflow-y: hidden;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    display: flex;
+    overflow-y: hidden;
+}
+
+/* ===== IMAGEM PRINCIPAL ===== */
+.cybertruck-img {
+    background-color: #0C0B0C;
+    width: 1250px;
+    padding: px;
+}
+
+.cybertruck-img img {
+    width: 1060px;
+    border: 1px solid #1A1A1A;
+}
+
+/* ===== DETALHES ===== */
+.cybertruck-details {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-left: 1px solid rgba(0, 0, 0, 0.375);
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-left: 66rem;
+    overflow-y: scroll;
+} 
+
+.cybertruck-details-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cybertruck-details img {
+    width: 140px;
+}
+
+.cybertruck-details a {
+    background-color: blue;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.cybertruck-details h2 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 40px;
+    color: black;
+}
+
+/* ===== CAR DETAILS ===== */
+.car-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 0 auto;
+    width: 300px;
+}
+
+#details p {
+    color: black;
+}
+
+/* ===== RODAS ===== */
+.wheels {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+}
+
+.wheels h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+.wheels p {
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+
+.wheels-imgs {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0 auto;
+    width: 200px;
+}
+
+#info-wheels {
+    height: 1rem;
+}
+
+#info-wheels p {
+    text-transform: uppercase;
+}
+
+.wheels-imgs img {
+    width: 70px;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.wheels-imgs img:active {
+    border: 1px solid black;
+    background-color: rgb(221, 221, 221);
+}
+
+/* ===== INTERIOR ===== */
+.inner-design {
+    height: 1200px;
+}
+
+.inner-color {
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+    height: 50px;
+    margin: 40px auto 2rem auto;
+}
+
+#color-inner1 {
+    width: 50px;
+    height: 50px;
+    background-color: #161414;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#color-inner2 {
+    width: 50px;
+    height: 50px;
+    background-color: #DEDEDE;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#innerimg-cy1,
+#innerimg-cy2 {
+    width: 1060px;
+    margin-top: 2rem;
+    background-color: #1A1A1A;
+}
+
+/* ===== PREÇO ===== */
+.price {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price h1 {
+    text-align: center;
+    margin: px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.price h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: blue;
+}
+
+.price h5 {
+    text-align: start;
+    margin: 10px 0 0 2rem;
+    color: rgb(61, 61, 61);
+}
+
+.price button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 3rem auto;
+    padding: 10px;
+    width: 200px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#wheels-selected {
+    height: 15px;
+}
+
+#inner-selected {
+    height: 15px;
+}
+
+#value {
+    height: 40px;
+    width: 235px;
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 23px;
+} 
+
+
+@media screen and (max-width: 760px) {
+
+
+    body {
+        background-color: white;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto; /* permite rolagem natural */
+        gap: 2rem;
+        background-color: white;
+        width: 500px;
+        overflow-x: hidden;
+    }
+
+    .cybertruck-img img {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        position: fixed; /* rola junto com o conteúdo */
+        background-color: white;
+        z-index: 1000;
+        transform: translateY(-40px);
+    }
+
+    .cybertruck-details {
+        position: relative;
+        width: 400px;
+        margin: 2rem auto;
+        border-left: none;
+        height: 195vh; /* ajusta à altura do conteúdo */
+        overflow-y: hidden;
+        background-color: rgb(255, 255, 255);
+        transform: translateY(250px);
+    }
+}
+
+
